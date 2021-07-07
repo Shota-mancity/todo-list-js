@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>To-do list for JS</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="message-container">
+        <h1>Todo List</h1>
+        <h2>ADD TASK</h2>
+        <button id="buttonadd">aaa</button>
+      </div>
+
+      <div class="input-container common-area">
+        <input class="add-input" id="add-task" placeholder="New Task" />
+        <input
+          class="add-input"
+          id="search-task"
+          placeholder="Search Keyword"
+        />
+      </div>
+
+      <div class="list-container common-area">
+        <!--追加タスクは初期状態でリスト、1クリックでinput、2クリックで文字の入力及び文字の更新-->
+        <ul>
+          <li id="init-task">
+            <div class="list-arrangement">
+              <!-- <input class="edit-input" value="Task1"> -->
+              <p>Task1</p>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </li>
+          <li id="init-task">
+            <div class="list-arrangement">
+              <!-- <input class="edit-input" value="Task2"> -->
+              <p>Task2</p>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
